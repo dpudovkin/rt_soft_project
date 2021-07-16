@@ -6,9 +6,8 @@ import json
 
 
 db_client = InfluxDBClient(host='localhost', port=8086)
-db_client.create_database('opcdata')
-db_client.switch_database('opcdata')
-# fl = db_client.query('Delete FROM accel WHERE time > 0')
+db_client.create_database('opc')
+db_client.switch_database('opc')
 
 
 URL = "opc.tcp://localhost:4840"
